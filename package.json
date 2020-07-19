@@ -28,5 +28,5 @@
     "scripts": {
         "test": "node index.test.js"
     },
-    "version": "2.0.0"
+    "version": "1.0.0"
 }
