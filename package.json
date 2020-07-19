@@ -1,5 +1,5 @@
 {
-    "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+    "publishConfig": { "registry": "https://npm.pkg.github.com/ahmedbaig" },
     "author": {
         "name": "Ahmed Baig",
         "email": "ahmedbaig54@yahoo.com"
