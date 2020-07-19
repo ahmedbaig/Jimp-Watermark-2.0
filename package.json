@@ -5,13 +5,13 @@
         "email": "ahmedbaig54@yahoo.com"
     },
     "bugs": {
-        "url": "https://github.com/ahmedbaig/Jimp-Watermark-2.0/issues"
+        "url": "https://github.com/ahmedbaig/jimp-watermark-with-position/issues"
     },
     "dependencies": {
         "jimp": ""
     },
     "description": "This is a library to add image watermark to an image and set custom positions x, y plus the size ratio.",
-    "homepage": "https://github.com/ahmedbaig/Jimp-Watermark-2.0#readme",
+    "homepage": "https://github.com/ahmedbaig/jimp-watermark-with-position#readme",
     "keywords": [
         "watermark",
         "jimp",
@@ -23,7 +23,7 @@
     "name": "jimp-watermark-with-position",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ahmedbaig/Jimp-Watermark-2.0.git"
+        "url": "git+https://github.com/ahmedbaig/jimp-watermark-with-position.git"
     },
     "scripts": {
         "test": "node index.test.js"
