@@ -20,7 +20,7 @@
     ],
     "license": "MIT",
     "main": "index.js",
-    "name": "jimp-watermark-2.0",
+    "name": "jimp-watermark-with-position",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/ahmedbaig/Jimp-Watermark-2.0.git"
