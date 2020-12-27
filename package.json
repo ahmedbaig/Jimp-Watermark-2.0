@@ -24,8 +24,7 @@
     "main": "index.js",
     "name": "@ahmedbaig/jimp-watermark-with-position",
     "repository": {
-        "type": "git",
-        "url": "https://github.com/ahmedbaig/jimp-watermark-with-position.git"
+        "url": "git@github.com:ahmedbaig/jimp-watermark-with-position.git"
     },
     "scripts": {
         "test": "node index.test.js"
