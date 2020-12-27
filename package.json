@@ -1,5 +1,5 @@
 {
-    "publishConfig": { "registry": "https://npm.pkg.github.com/ahmedbaig" },
+    "publishConfig": { "registry": "https://npm.pkg.github.com/" },
     "author": {
         "name": "Ahmed Baig",
         "email": "ahmedbaig54@yahoo.com"
@@ -20,7 +20,7 @@
     ],
     "license": "MIT",
     "main": "index.js",
-    "name": "jimp-watermark-with-position",
+    "name": "@ahmedbaig/jimp-watermark-with-position",
     "repository": {
         "type": "git",
         "url": "https://github.com/ahmedbaig/jimp-watermark-with-position.git"
