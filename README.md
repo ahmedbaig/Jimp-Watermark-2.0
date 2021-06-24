@@ -1,33 +1,39 @@
 # Watermark Position
+
 A powerful watermark library based on Jimp for node.js. This can be used to overlay a "image" watermark in another image with x and y position.
 
 ### Installation
 
-	'npm install watermark-with-position'
+'npm install watermark-position'
 
 ### Server-side usage
 
 ```javascript
-var watermark = require('watermark-with-position');
+var watermark = require("watermark-position");
 
-watermark.addWatermark('/path/to/image/file','/path/to/image/watermark', options);
+watermark.addWatermark(
+  "/path/to/image/file",
+  "/path/to/image/watermark",
+  options
+);
 
-watermark.addTextWatermark('/path/to/image/file', options);
+watermark.addTextWatermark("/path/to/image/file", options);
 ```
 
 ### API
 
 #### addWatermark(imageSource, watermarkSource, options)
 
-API to overlay watermark in given image. It takes three arguments : 
+API to overlay watermark in given image. It takes three arguments :
+
 1. path of the image
 2. path of the watermark
-2. options object. This argument is optional
-
+3. options object. This argument is optional
 
 **Options**
 
 Various options supported by this API are :
+
 - **ratio** - To specify watermark text. Default is 'Sample watermark'.
 - **opacity** - To specify color of watermark text. Default is 'Grey'.
 - **dstPath** - To specify the output path. Default is 'watermark.{sourceFile ext}'.
@@ -35,70 +41,70 @@ Various options supported by this API are :
 **Example**
 
 ```javascript
-var watermark = require('watermark-with-position');
+var watermark = require("watermark-position");
 
-watermark.addWatermark('./img/main.jpg', './img/logo.png').then(data => {
+watermark
+  .addWatermark("./img/main.jpg", "./img/logo.png")
+  .then((data) => {
     console.log(data);
-}).catch(err => {
+  })
+  .catch((err) => {
     console.log(err);
-});
+  });
 ```
 
 ```javascript
-
-    var watermark = require('watermark-with-position');
-    var options = {
-        'ratio': 0.1, // Should be less than one
-        'opacity': 1,
-        'dstPath': `~`, // Destination Path
-        'positionX': 15,
-        'positionY': 3.9
-    };
-    watermark.addWatermark(image, 'StringData', options);
+var watermark = require("watermark-position");
+var options = {
+  ratio: 0.1, // Should be less than one
+  opacity: 1,
+  dstPath: `~`, // Destination Path
+  positionX: 15,
+  positionY: 3.9,
+};
+watermark.addWatermark(image, "StringData", options);
 ```
 
 **Different Options**
 
 ```javascript
-
 //
 // Options to specify output path
 //
-var watermark = require('watermark-with-position');
+var watermark = require("watermark-position");
 var options = {
-	'ratio': 0.6,// Should be less than one
-    'opacity': 0.6, //Should be less than one
-    'dstPath' : './watermark.jpg'
+  ratio: 0.6, // Should be less than one
+  opacity: 0.6, //Should be less than one
+  dstPath: "./watermark.jpg",
 };
-watermark.addWatermark('./img/main.jpg', './img/logo.png', options);
-
+watermark.addWatermark("./img/main.jpg", "./img/logo.png", options);
 ```
 
 **Custom Position Options**
 
 ```javascript
-
-    var watermark = require('watermark-with-position');
-    var options = {
-        'ratio': 0.1, // Should be less than one
-        'opacity': 1,
-        'dstPath': `~`, // Destination Path
-        'positionX': 15,
-        'positionY': 3.9
-    };
-    watermark.addWatermark(image, 'StringData', options);
+var watermark = require("watermark-position");
+var options = {
+  ratio: 0.1, // Should be less than one
+  opacity: 1,
+  dstPath: `~`, // Destination Path
+  positionX: 15,
+  positionY: 3.9,
+};
+watermark.addWatermark(image, "StringData", options);
 ```
 
 #### addTextWatermark(imageSource, options)
 
-API to overlay watermark in given image. It takes two arguments : 
+API to overlay watermark in given image. It takes two arguments :
+
 1. path of the image
 2. options object. This argument is optional
-
 
 **Options**
 
 Various options supported by this API are :
+
 - **text** - To specify the text to be overlaid on the main image.
 - **textSize** - To specify size of text over the main image, value ranged from 1 to 8.
 - **dstPath** - To specify the output path. Default is 'watermark.{sourceFile ext}'.
@@ -106,30 +112,33 @@ Various options supported by this API are :
 **Example**
 
 ```javascript
-var watermark = require('watermark-with-position');
+var watermark = require("watermark-position");
 
-watermark.addTextWatermark('./img/main.jpg').then(data => {
+watermark
+  .addTextWatermark("./img/main.jpg")
+  .then((data) => {
     console.log(data);
-}).catch(err => {
+  })
+  .catch((err) => {
     console.log(err);
-});
+  });
 ```
 
 **Different Options**
 
 ```javascript
-
 //
 // Options to specify output path
 //
-var watermark = require('watermark-with-position');
+var watermark = require("watermark-position");
 var options = {
-	'text': 'watermark-test',
-    'textSize': 6, //Should be between 1-8
-    'dstPath' : './watermark.jpg'
+  text: "watermark-test",
+  textSize: 6, //Should be between 1-8
+  dstPath: "./watermark.jpg",
 };
-watermark.addTextWatermark('./img/main.jpg', options);
+watermark.addTextWatermark("./img/main.jpg", options);
 ```
+
 ### License(MIT)
 
 Copyright (c) 2019 Ahmed Baig
@@ -138,4 +147,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.    
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
