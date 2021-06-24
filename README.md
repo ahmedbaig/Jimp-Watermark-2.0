@@ -3,12 +3,12 @@ A powerful watermark library based on Jimp for node.js. This can be used to over
 
 ### Installation
 
-	'npm install @ahmed/watermark-with-position'
+	'npm install watermark-with-position'
 
 ### Server-side usage
 
 ```javascript
-var watermark = require('@ahmedbaig/watermark-with-position');
+var watermark = require('watermark-with-position');
 
 watermark.addWatermark('/path/to/image/file','/path/to/image/watermark', options);
 
@@ -35,7 +35,7 @@ Various options supported by this API are :
 **Example**
 
 ```javascript
-var watermark = require('@ahmedbaig/watermark-with-position');
+var watermark = require('watermark-with-position');
 
 watermark.addWatermark('./img/main.jpg', './img/logo.png').then(data => {
     console.log(data);
@@ -46,7 +46,7 @@ watermark.addWatermark('./img/main.jpg', './img/logo.png').then(data => {
 
 ```javascript
 
-    var watermark = require('@ahmedbaig/watermark-with-position');
+    var watermark = require('watermark-with-position');
     var options = {
         'ratio': 0.1, // Should be less than one
         'opacity': 1,
@@ -64,7 +64,7 @@ watermark.addWatermark('./img/main.jpg', './img/logo.png').then(data => {
 //
 // Options to specify output path
 //
-var watermark = require('@ahmedbaig/watermark-with-position');
+var watermark = require('watermark-with-position');
 var options = {
 	'ratio': 0.6,// Should be less than one
     'opacity': 0.6, //Should be less than one
@@ -78,7 +78,7 @@ watermark.addWatermark('./img/main.jpg', './img/logo.png', options);
 
 ```javascript
 
-    var watermark = require('@ahmedbaig/watermark-with-position');
+    var watermark = require('watermark-with-position');
     var options = {
         'ratio': 0.1, // Should be less than one
         'opacity': 1,
@@ -106,7 +106,7 @@ Various options supported by this API are :
 **Example**
 
 ```javascript
-var watermark = require('@ahmedbaig/watermark-with-position');
+var watermark = require('watermark-with-position');
 
 watermark.addTextWatermark('./img/main.jpg').then(data => {
     console.log(data);
@@ -122,7 +122,7 @@ watermark.addTextWatermark('./img/main.jpg').then(data => {
 //
 // Options to specify output path
 //
-var watermark = require('@ahmedbaig/watermark-with-position');
+var watermark = require('watermark-with-position');
 var options = {
 	'text': 'watermark-test',
     'textSize': 6, //Should be between 1-8
