@@ -1,28 +1,28 @@
 {
-  "name": "watermark-position",
-  "version": "1.0.0",
-  "description": "This is a library to add image watermark to an image and set custom positions x, y plus the size ratio.",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
-  "scripts": {
-    "test": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ahmedbaig/watermark-position.git"
-  },
-  "keywords": [
-    "watermark",
-    "image",
-    "watermark",
-    "add",
-    "watermark"
-  ],
-  "author": "Ahmed Baig",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ahmedbaig/watermark-position/issues"
-  },
-  "homepage": "https://github.com/ahmedbaig/watermark-position#readme"
+    "name": "watermark-position",
+    "version": "1.0.1",
+    "description": "This is a library to add image watermark to an image and set custom positions x, y plus the size ratio.",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {},
+    "scripts": {
+        "test": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ahmedbaig/watermark-position.git"
+    },
+    "keywords": [
+        "watermark",
+        "image",
+        "watermark",
+        "add",
+        "watermark"
+    ],
+    "author": "Ahmed Baig",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ahmedbaig/watermark-position/issues"
+    },
+    "homepage": "https://github.com/ahmedbaig/watermark-position#readme"
 }
