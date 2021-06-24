@@ -1,5 +1,5 @@
-# jimp-watermark
-A powerful watermark library based on Jimp for node.js. This can be used to overlay a "image" watermark in another image.
+# Watermark Position
+A powerful watermark library based on Jimp for node.js. This can be used to overlay a "image" watermark in another image with x and y position.
 
 ### Installation
 
