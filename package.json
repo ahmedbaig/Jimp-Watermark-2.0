@@ -1,33 +1,28 @@
 {
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/"
-    },
-    "author": {
-        "name": "Ahmed Baig",
-        "email": "ahmedbaig54@yahoo.com"
-    },
-    "bugs": {
-        "url": "https://github.com/ahmedbaig/jimp-watermark-with-position/issues"
-    },
-    "dependencies": {
-        "jimp": ""
-    },
-    "description": "This is a library to add image watermark to an image and set custom positions x, y plus the size ratio.",
-    "homepage": "https://github.com/ahmedbaig/jimp-watermark-with-position#readme",
-    "keywords": [
-        "watermark",
-        "jimp",
-        "image watermark",
-        "add watermark"
-    ],
-    "license": "MIT",
-    "main": "index.js",
-    "name": "@ahmedbaig/jimp-watermark-with-position",
-    "repository": {
-        "url": "git@github.com:ahmedbaig/jimp-watermark-with-position.git"
-    },
-    "scripts": {
-        "test": "node index.test.js"
-    },
-    "version": "1.0.2"
+  "name": "watermark-position",
+  "version": "1.0.0",
+  "description": "This is a library to add image watermark to an image and set custom positions x, y plus the size ratio.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedbaig/watermark-position.git"
+  },
+  "keywords": [
+    "watermark",
+    "image",
+    "watermark",
+    "add",
+    "watermark"
+  ],
+  "author": "Ahmed Baig",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahmedbaig/watermark-position/issues"
+  },
+  "homepage": "https://github.com/ahmedbaig/watermark-position#readme"
 }
